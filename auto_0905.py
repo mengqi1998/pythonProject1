@@ -35,7 +35,7 @@ predict = driver.find_element(by=By.CLASS_NAME, value='up')
 
 print(predict.text)
 print(now_gas.text)
-#driver.quit()
+driver.quit()
 #add column
 
 import requests as req
