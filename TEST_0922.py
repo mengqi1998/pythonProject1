@@ -1,7 +1,10 @@
+import schedule
+import time
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
+import requests as req
 
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 
@@ -13,10 +16,7 @@ print(predict.text)
 print(now_gas.text)
 driver.quit()
 
-
-import requests as req
-from urllib import parse
-
+# from urllib import parse
 evt = 'test'   # 事件名稱
 key = 'b-Lz1dFuvX_oHp4iURBg1r'
 val1 = predict.text  # value1參數值
@@ -26,3 +26,5 @@ url = (f'https://maker.ifttt.com/trigger/{evt}' +
 
 r = req.get(url)  # 執行IFTTT平台的webhooks
 r.text   # 取得IFTTT的回應
+
+
