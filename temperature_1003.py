@@ -33,7 +33,7 @@ if response.status_code == 200:
 else:
     print("Can't get data!")
 
-################################################
+
 ######################line######################
 def line_notify():
 
@@ -65,11 +65,7 @@ def line_notify():
     }
 
     requests.post(url=line_url, headers=line_header, data=line_data)
-
-
 # if __name__ == '__main__':
 line_notify()
 
-
-################################################
 ######################line######################
