@@ -1,6 +1,6 @@
 import json
 import requests
-import pandas
+# import pandas
 # def get_data():
 
 url = "https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-FDA1EAB2-E1DE-4F0C-8E41-7026A551403E&locationName=%E8%87%BA%E5%8D%97%E5%B8%82"
