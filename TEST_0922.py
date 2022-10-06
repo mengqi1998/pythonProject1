@@ -27,4 +27,3 @@ url = (f'https://maker.ifttt.com/trigger/{evt}' +
 r = req.get(url)  # 執行IFTTT平台的webhooks
 r.text   # 取得IFTTT的回應
 
-
